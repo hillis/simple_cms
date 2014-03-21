@@ -33,7 +33,7 @@ CREATE TABLE `admin_users` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `index_admin_users_on_username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,7 +42,6 @@ CREATE TABLE `admin_users` (
 
 LOCK TABLES `admin_users` WRITE;
 /*!40000 ALTER TABLE `admin_users` DISABLE KEYS */;
-INSERT INTO `admin_users` VALUES (1,'John',NULL,'',NULL,NULL,'2014-03-21 19:11:16','2014-03-21 19:11:16');
 /*!40000 ALTER TABLE `admin_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +87,7 @@ CREATE TABLE `pages` (
   PRIMARY KEY (`id`),
   KEY `index_pages_on_subject_id` (`subject_id`),
   KEY `index_pages_on_permalink` (`permalink`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,9 +96,6 @@ CREATE TABLE `pages` (
 
 LOCK TABLES `pages` WRITE;
 /*!40000 ALTER TABLE `pages` DISABLE KEYS */;
-INSERT INTO `pages` VALUES (2,1,'First Page','first',1,0,'2014-03-12 20:43:58','2014-03-12 20:43:58');
-INSERT INTO `pages` VALUES (3,1,'First Page','first',1,0,'2014-03-12 20:47:44','2014-03-12 20:47:44');
-INSERT INTO `pages` VALUES (4,NULL,'Second Page','second',2,0,'2014-03-12 20:48:19','2014-03-12 20:48:19');
 /*!40000 ALTER TABLE `pages` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,7 +174,7 @@ CREATE TABLE `subjects` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -187,9 +183,6 @@ CREATE TABLE `subjects` (
 
 LOCK TABLES `subjects` WRITE;
 /*!40000 ALTER TABLE `subjects` DISABLE KEYS */;
-INSERT INTO `subjects` VALUES (1,'Initial Subject',1,1,'2014-03-11 16:52:24','2014-03-12 13:53:25');
-INSERT INTO `subjects` VALUES (2,'Revised Subject',2,1,'2014-03-12 13:52:09','2014-03-12 13:56:10');
-INSERT INTO `subjects` VALUES (4,'Third Subject',3,0,'2014-03-12 14:16:27','2014-03-12 14:16:27');
 /*!40000 ALTER TABLE `subjects` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -202,4 +195,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-03-21 14:22:22
+-- Dump completed on 2014-03-21 14:22:45
