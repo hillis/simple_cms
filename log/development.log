@@ -1527,3 +1527,4 @@ Migrating to CreateAdminUsersPagesJoin (20140320005822)
   [1m[35m (30.6ms)[0m  COMMIT
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
   [1m[36mPage Load (27.4ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
+  [1m[36mPage Load (0.3ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
