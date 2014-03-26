@@ -1536,3 +1536,5 @@ Migrating to CreateAdminUsersPagesJoin (20140320005822)
 >>>>>>> FETCH_HEAD
   [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
   [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
+  [1m[35mPage Load (0.3ms)[0m  SELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT `pages`.* FROM `pages` WHERE `pages`.`id` = 2 LIMIT 1[0m
